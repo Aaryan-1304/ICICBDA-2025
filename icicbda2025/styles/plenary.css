@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.dyimg {
+    margin-right: 20px;
+    margin-top: 20px;
+    /* Adjust the spacing between the image and the title */
+}
+
+.title h2 {
+    margin: 0;
+    /* Remove default margin for h2 */
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    color: #0d71aa;
+    font-size: 25px;
+}
+
+.title p {
+    margin: 0;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: normal;
+}
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .title p {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+    }
+
+    .dyimg {
+        margin-bottom: 15px;
+        /* Adjust the spacing between the image and the title for mobile */
+        margin-right: 0;
+        /* Reset margin for mobile */
+    }
+}
+
+#toppart {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    /* Set the background color to match your design */
+    z-index: 1000;
+    /* Set a high z-index to ensure it stays on top */
+}
+
+
+.navbar {
+    /* background-color: #0d71aa; */
+    text-align: center;
+}
+
+.navbar-toggler {
+    border-color: #ffffff;
+    /* Set border color for the toggle button */
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    /* Center the navbar items */
+}
+
+.nav-item {
+    margin: 0 10px;
+    /* Adjust the margin between navbar items */
+}
+
+.nav-link {
+    color: #0d71aa !important;
+
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    background-color: #0d71aa;
+}
+
+.dropdown-item {
+    color: #0d71aa !important;
+    /* Set text color for dropdown items */
+}
+
+
+
+.conference-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    /* White opaque background */
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    /* Dark text color */
+}
+
+.large-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0d71aa;
+    /* Dark blue color */
+}
+
+.medium-text {
+    font-size: 24px;
+    color: #555;
+    /* Dark gray color */
+}
+
+.background-image {
+    width: 100%;
+    height: 50vh;
+    /* background: url('https://as2.ftcdn.net/v2/jpg/04/18/84/23/1000_F_418842375_mdQsFdQgV93p0WqDvAtQBXLdi6TuwE2Z.jpg');
+    background-size: cover; */
+    background-position: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.video{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
+
+    /* .background-image{
+        height: 100vh;
+    } */
+    .conference-info {
+        padding: 10px;
+        /* margin-top: 20px; */
+    }
+
+    .large-text {
+        font-size: 24px;
+    }
+
+    .medium-text {
+        font-size: 18px;
+    }
+
+}
+
+
+.home-content {
+    max-width: 800px;
+    margin: 30px auto;
+    /* Add some spacing from the above image */
+    text-align: justify;
+}
+
+.home-content h2 {
+    font-size: 24px;
+    /* Increase the font size for the heading */
+    color: #0d71aa;
+    /* Dark blue color */
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.home-content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    /* Increase the font size for the paragraphs */
+    line-height: 1.5;
+    color: #333;
+}
+
+.home-content p:first-child {
+    font-weight: bold;
+}
+
+.home-content p:last-child {
+    font-style: italic;
+    color: #555;
+}
+
+@media screen and (max-width: 800px) {
+    .home-content {
+        margin: 10px;
+        /* Adjust spacing for smaller screens */
+    }
+
+    .home-content h2 {
+        font-size: 17px;
+        /* Reduce font size for the heading on smaller screens */
+    }
+
+    .home-content p {
+        font-size: 13px;
+        /* Reduce font size for paragraphs on smaller screens */
+    }
+}
+
+
+
+.home-footer {
+    background-color: #0d71aa;
+    /* Dark blue background color */
+    color: #fff;
+    /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-text {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text p {
+        font-size: 13px;
+    }
+}
+
+.important-dates {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.important-dates th,
+.important-dates td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.important-dates th {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 800px) {
+    .important-dates {
+        margin: 0 auto;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.card-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.second-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the cards */
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: 300px; /* Adjust based on your preference */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h5, .card h6 {
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .second-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 500px; /* Adjust based on your preference */
+    }
+}
+.full-width-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover; /* Maintain aspect ratio */
+}

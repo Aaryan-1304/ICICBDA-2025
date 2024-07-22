@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#toppart {
+    position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: white; /* Set the background color to match your design */
+            z-index: 1000; /* Set a high z-index to ensure it stays on top */
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .dyimg {
+    margin-right: 20px;
+    margin-top: 20px;
+    /* Adjust the spacing between the image and the title */
+  }
+  
+  .title h2 {
+    margin: 0;
+    /* Remove default margin for h2 */
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    color: #0d71aa;
+    font-size: 25px;
+  }
+  
+  .title p {
+    margin: 0;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: normal;
+  }
+  
+  @media (max-width: 800px) {
+    .header {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .title p{
+        font-size: 18px;
+    }
+    .title h2{
+        font-size: 18px;
+    }
+    .dyimg {
+      margin-bottom: 15px;
+      /* Adjust the spacing between the image and the title for mobile */
+      margin-right: 0;
+      /* Reset margin for mobile */
+    }
+  }
+
+
+
+
+  .navbar {
+    /* background-color: #0d71aa; */
+    text-align: center;
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* Set border color for the toggle button */
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Center the navbar items */
+}
+
+.nav-item {
+    margin: 0 10px; /* Adjust the margin between navbar items */
+}
+
+.nav-link {
+    color: #0d71aa !important;
+  
+    font-size: 18px; 
+}
+
+.dropdown-menu {
+    background-color: #0d71aa;
+}
+
+.dropdown-item {
+    color: #0d71aa !important; /* Set text color for dropdown items */
+}
+
+
+
+.conference-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* White opaque background */
+    padding: 20px;
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+.large-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0d71aa; /* Dark blue color */
+}
+
+.medium-text {
+    font-size: 24px;
+    color: #555; /* Dark gray color */
+}
+
+.background-image {
+    width: 100%;
+    height: 50vh;
+    
+    background-position: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.video{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
+    /* .background-image{
+        height: 100vh;
+    } */
+    .conference-info {
+        padding: 10px;
+        /* margin-top: 20px; */
+    }
+
+    .large-text {
+        font-size: 24px;
+    }
+
+    .medium-text {
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+/* Style for the Registration Fees Sections */
+
+.reg-fees-container {
+    display: flex;
+    flex-direction: column; /* Display sections in a single column */
+    align-items: center; /* Center the sections horizontally */
+    gap: 20px; /* Add gap between sections */
+    margin-top: 25px;
+}
+
+.reg-fees-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Make each card full-width */
+    max-width: 600px; /* Set a maximum width for each card */
+    
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.reg-fees-card h2 {
+    color: #0d71aa;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 23px;
+}
+
+.reg-fees-card ul {
+    list-style-type: circle;
+    padding: 20px;
+}
+
+.reg-fees-card li {
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Add additional styles as needed */
+
+
+
+
+.home-footer {
+    background-color: #0d71aa; /* Dark blue background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+@media screen and (max-width: 768px) {
+    .footer-text {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text p {
+        font-size: 13px;
+    }
+}
+
+
+.fees-table {
+    margin: 0 auto; /* Center the table horizontally */
+}
+
+.fees-table th,
+.fees-table td {
+    padding: 10px; /* Add padding to cells for better spacing */
+    font-size: 23px;
+}
+
+.fees-table th:first-child {
+    visibility: hidden; /* Hide the header of the first column (Authors) */
+}
+
+.fees-table td:first-child {
+    text-align: left; /* Align the content inside the first column (Authors) to the left */
+}
+
+.fees-table th:nth-child(n+2),
+.fees-table td:nth-child(n+2) {
+    text-align: right; /* Align the second and third columns (National and International) to the right */
+}
+@media (max-width: 768px) {
+    .reg-fees-card{
+        background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px; /* Set a maximum width for each card */
+    
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    }
+}
+.full-width-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover; /* Maintain aspect ratio */
+}
