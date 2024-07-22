@@ -67,36 +67,41 @@
 }
 
 
-
 .navbar {
-  /* background-color: #0d71aa; */
-  text-align: center;
+    /* background-color: #0d71aa; */
+    text-align: center;
 }
 
 .navbar-toggler {
-  border-color: #ffffff; /* Set border color for the toggle button */
+    border-color: #ffffff;
+    /* Set border color for the toggle button */
 }
 
 .navbar-nav {
-  margin: 0 auto; /* Center the navbar items */
+    margin: 0 auto;
+    /* Center the navbar items */
 }
 
 .nav-item {
-  margin: 0 10px; /* Adjust the margin between navbar items */
+    margin: 0 10px;
+    /* Adjust the margin between navbar items */
 }
 
 .nav-link {
-  color: #0d71aa !important;
-  font-size: 18px; 
+    color: #0d71aa !important;
+
+    font-size: 18px;
 }
 
 .dropdown-menu {
-  background-color: #0d71aa;
+    background-color: #0d71aa;
 }
 
 .dropdown-item {
-  color: #0d71aa !important; /* Set text color for dropdown items */
+    color: #0d71aa !important;
+    /* Set text color for dropdown items */
 }
+
 
 
 
@@ -275,3 +280,6 @@
         margin-bottom: 20px;
     }
 }
+
+
+
